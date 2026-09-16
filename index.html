@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mauricio Cabrera | Desarrollador Java & Spring Boot</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="navbar__brand">
+      <a href="#inicio" class="navbar__logo">MC</a>
+      <span class="navbar__name">Mauricio Cabrera</span>
+    </div>
+    <div class="navbar__actions">
+      <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
+        <span id="langLabel">ES</span>
+      </button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+        <span class="theme-toggle__icon" id="themeIcon">🌙</span>
+      </button>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="navbar__menu" id="navMenu">
+      <li><a href="#inicio" class="navbar__link navbar__link--active" data-section="inicio">Inicio</a></li>
+      <li><a href="#sobre-mi" class="navbar__link" data-section="sobre-mi">Sobre mí</a></li>
+      <li><a href="#proyectos" class="navbar__link" data-section="proyectos">Proyectos</a></li>
+      <li><a href="#caso-de-estudio" class="navbar__link" data-section="caso-de-estudio">Caso de estudio</a></li>
+      <li><a href="#habilidades" class="navbar__link" data-section="habilidades">Habilidades</a></li>
+      <li><a href="#contacto" class="navbar__link" data-section="contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="section hero" id="inicio">
+      <div class="hero__content">
+        <p class="hero__greeting" data-i18n="greeting">Hola, soy</p>
+        <h1 class="hero__title" data-i18n="title">Mauricio Cabrera</h1>
+        <p class="hero__subtitle" data-i18n="subtitle">Desarrollador Web especialista en Java & Spring Boot</p>
+        <p class="hero__description" data-i18n="description">Construyo soluciones backend escalables, modernas y de alto rendimiento con el ecosistema Java empresarial.</p>
+        <div class="hero__actions">
+          <a href="#proyectos" class="btn btn--primary" data-i18n="viewProjects">Ver Proyectos</a>
+          <a href="#contacto" class="btn btn--outline" data-i18n="contactMe">Contactarme</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__blob"></div>
+        <div class="hero__avatar">
+          <span class="hero__avatar-letters">MC</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="sobre-mi">
+      <div class="container">
+        <h2 class="section__title" data-i18n="aboutTitle">Sobre mí</h2>
+        <div class="about__grid">
+          <div class="about__text">
+            <p data-i18n="aboutDesc1">Soy un desarrollador web apasionado por el ecosistema Java, con enfoque en Spring Boot y arquitecturas backend. Mi viaje comenzó con Java puro y hoy abarco desde consola hasta aplicaciones web empresariales con J2EE, Servlets, JSP y bases de datos relacionales.</p>
+            <p data-i18n="aboutDesc2">Especializado en crear soluciones robustas, escalables y mantenibles. Cada proyecto es una oportunidad para aplicar patrones de diseño, testing y buenas prácticas de ingeniería de software.</p>
+            <div class="about__tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Java EE</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Maven</span>
+              <span class="tag">Git</span>
+            </div>
+          </div>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__number">3</span>
+              <span class="stat__label" data-i18n="projectsLabel">Proyectos</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">24</span>
+              <span class="stat__label" data-i18n="testsLabel">Tests JUnit</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">2</span>
+              <span class="stat__label" data-i18n="techLabels">Tecnologías principales</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="proyectos">
+      <div class="container">
+        <h2 class="section__title" data-i18n="projectsTitle">Proyectos</h2>
+        <div class="projects__grid">
+          <article class="project-card">
+            <div class="project-card__badge">Java</div>
+            <h3 class="project-card__title">SmartTask</h3>
+            <p class="project-card__desc" data-i18n="smarttaskDesc">Gestor de tareas de consola desarrollado en Java puro para la evaluación del Módulo 4: Fundamentos de Programación.</p>
+            <div class="project-card__tags">
+              <span class="tag tag--sm">Java</span>
+              <span class="tag tag--sm">Consola</span>
+              <span class="tag tag--sm">Estructuras de Datos</span>
+            </div>
+            <a href="https://github.com/maucabreradev/smarttask" class="project-card__link" target="_blank" rel="noopener" data-i18n="viewRepo">Ver repositorio →</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__badge">Spring Boot</div>
+            <h3 class="project-card__title">Spring Edu Manager</h3>
+            <p class="project-card__desc" data-i18n="springeduDesc">Proyecto para TD Para Chile que aprovecha el ecosistema Spring Boot para crear soluciones educativas escalables.</p>
+            <div class="project-card__tags">
+              <span class="tag tag--sm">Spring Boot</span>
+              <span class="tag tag--sm">Java</span>
+              <span class="tag tag--sm">TD Para Chile</span>
+            </div>
+            <a href="https://github.com/maucabreradev/springedumanager" class="project-card__link" target="_blank" rel="noopener" data-i18n="viewRepo">Ver repositorio →</a>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-card__badge">Java EE</div>
+            <h3 class="project-card__title">Biblioteca Digital UNTEC</h3>
+            <p class="project-card__desc" data-i18n="untecDesc">Sistema web dinámico con arquitectura MVC, JSP/Servlets, JDBC, MySQL, 24 tests JUnit 5 y despliegue en Tomcat 9.</p>
+            <div class="project-card__tags">
+              <span class="tag tag--sm">Java EE 8</span>
+              <span class="tag tag--sm">Servlet 4.0</span>
+              <span class="tag tag--sm">JSTL</span>
+              <span class="tag tag--sm">MySQL</span>
+              <span class="tag tag--sm">JUnit 5</span>
+            </div>
+            <a href="https://github.com/maucabreradev/untec" class="project-card__link" target="_blank" rel="noopener" data-i18n="viewRepo">Ver repositorio →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section case-study" id="caso-de-estudio">
+      <div class="container">
+        <h2 class="section__title" data-i18n="caseStudyTitle">Caso de Estudio</h2>
+        <p class="section__subtitle" data-i18n="caseStudySubtitle">Biblioteca Digital UNTEC — Un sistema de gestión bibliotecaria empresarial</p>
+        <div class="case-study">
+          <div class="case-study__point">
+            <span class="case-study__num">01</span>
+            <div class="case-study__body">
+              <h3 class="case-study__heading" data-i18n="csDescTitle">Descripción</h3>
+              <p class="case-study__text" data-i18n="csDesc">Sistema web para la gestión integral de catálogo, préstamos, devoluciones y usuarios de la Universidad Tecnológica UNTEC, desarrollado con Java EE y patrón MVC estricto.</p>
+            </div>
+          </div>
+          <div class="case-study__point">
+            <span class="case-study__num">02</span>
+            <div class="case-study__body">
+              <h3 class="case-study__heading" data-i18n="csChallengeTitle">Desafío Principal</h3>
+              <p class="case-study__text" data-i18n="csChallenge">Gestionar la concurrencia de préstamos, mantener la consistencia del inventario entre múltiples roles de usuario (estudiante y administrador) y garantizar la integridad transaccional del sistema sin un framework ORM.</p>
+            </div>
+          </div>
+          <div class="case-study__point">
+            <span class="case-study__num">03</span>
+            <div class="case-study__body">
+              <h3 class="case-study__heading" data-i18n="csSolutionTitle">Solución Propuesta</h3>
+              <p class="case-study__text" data-i18n="csSolution">Arquitectura MVC con Servlets HTTP como controladores, JSP + JSTL como motor de vistas, patrón DAO con JDBC, PreparedStatement contra inyección SQL, y transacciones manejadas con setAutoCommit(false) para garantizar la consistencia entre stock de libros y registros de préstamo.</p>
+            </div>
+          </div>
+          <div class="case-study__point">
+            <span class="case-study__num">04</span>
+            <div class="case-study__body">
+              <h3 class="case-study__heading" data-i18n="csToolsTitle">Herramientas Técnicas</h3>
+              <p class="case-study__text" data-i18n="csTools">Java 8+, Java EE 8 (Servlet 4.0, JSP 2.3, JSTL 1.2), Apache Tomcat 9, MySQL 8.0, Eclipse Enterprise Edition, Bootstrap 5, JUnit 5 (Jupiter), scripts PowerShell para build automatizado.</p>
+            </div>
+          </div>
+          <div class="case-study__point">
+            <span class="case-study__num">05</span>
+            <div class="case-study__body">
+              <h3 class="case-study__heading" data-i18n="csLearningsTitle">Principales Aprendizajes</h3>
+              <p class="case-study__text" data-i18n="csLearnings">Patrón Singleton para conexiones JDBC, manejo de sesiones HTTP con HttpSession, implementación de AuthFilter para seguridad de rutas, gestión de estados con control de caché, y el valor de una capa DAO bien definida para mantener la separación de responsabilidades.</p>
+            </div>
+          </div>
+          <div class="case-study__point">
+            <span class="case-study__num">06</span>
+            <div class="case-study__body">
+              <h3 class="case-study__heading" data-i18n="csMetricsTitle">Métricas de Impacto</h3>
+              <p class="case-study__text" data-i18n="csMetrics">24 pruebas unitarias y de integración con 100% de aprobación en JUnit 5. Cero vulnerabilidades SQL mediante PreparedStatement. Soporte para 2 roles de usuario con acceso diferenciado. Generación automatizada de archivo .WAR. Tiempo de despliegue reducido mediante scripts build.</p>
+            </div>
+          </div>
+          <div class="case-study__point">
+            <span class="case-study__num">07</span>
+            <div class="case-study__body">
+              <h3 class="case-study__heading" data-i18n="csSkillsTitle">Habilidades Técnicas Aplicadas</h3>
+              <p class="case-study__text" data-i18n="csSkills">Java EE 8, Servlets, JSP, JSTL, JDBC, MySQL, Patrón MVC, Singleton, AuthFilter, JUnit 5, Bootstrap 5, HTML5/CSS3, scripting PowerShell, estructura de proyectos Enterprise.</p>
+            </div>
+          </div>
+          <div class="case-study__point">
+            <span class="case-study__num">08</span>
+            <div class="case-study__body">
+              <h3 class="case-study__heading" data-i18n="csWhyTitle">¿Por qué este proyecto?</h3>
+              <p class="case-study__text" data-i18n="csWhy">Demuestra dominio completo del ecosistema Java web empresarial más allá de Spring Boot. Complementa mi perfil mostrando que puedo trabajar con la pila completa de Java EE: desde Servlets y JSP hasta JDBC, seguridad y testing, lo cual es fundamental para entender la base sobre la que se construye Spring.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="habilidades">
+      <div class="container">
+        <h2 class="section__title" data-i18n="skillsTitle">Habilidades</h2>
+        <div class="skills__grid">
+          <div class="skill">
+            <span class="skill__icon">☕</span>
+            <span class="skill__name">Java</span>
+          </div>
+          <div class="skill">
+            <span class="skill__icon">🍵</span>
+            <span class="skill__name">Spring Boot</span>
+          </div>
+          <div class="skill">
+            <span class="skill__icon">📦</span>
+            <span class="skill__name">Java EE 8</span>
+          </div>
+          <div class="skill">
+            <span class="skill__icon">🛡️</span>
+            <span class="skill__name">Servlets</span>
+          </div>
+          <div class="skill">
+            <span class="skill__icon">🎨</span>
+            <span class="skill__name">JSP / JSTL</span>
+          </div>
+          <div class="skill">
+            <span class="skill__icon">🗄️</span>
+            <span class="skill__name">MySQL</span>
+          </div>
+          <div class="skill">
+            <span class="skill__icon">🧪</span>
+            <span class="skill__name">JUnit 5</span>
+          </div>
+          <div class="skill">
+            <span class="skill__icon">📐</span>
+            <span class="skill__name">JDBC</span>
+          </div>
+          <div class="skill">
+            <span class="skill__icon">🎯</span>
+            <span class="skill__name">Maven</span>
+          </div>
+          <div class="skill">
+            <span class="skill__icon">💜</span>
+            <span class="skill__name">TypeScript</span>
+          </div>
+          <div class="skill">
+            <span class="skill__icon">⚡</span>
+            <span class="skill__name">JavaScript</span>
+          </div>
+          <div class="skill">
+            <span class="skill__icon">🐚</span>
+            <span class="skill__name">Shell / PowerShell</span>
+          </div>
+          <div class="skill">
+            <span class="skill__icon">🐳</span>
+            <span class="skill__name">Git / GitHub</span>
+          </div>
+          <div class="skill">
+            <span class="skill__icon">📱</span>
+            <span class="skill__name">Bootstrap 5</span>
+          </div>
+          <div class="skill">
+            <span class="skill__icon">🔒</span>
+            <span class="skill__name">Seguridad Web</span>
+          </div>
+          <div class="skill">
+            <span class="skill__icon">☁️</span>
+            <span class="skill__name">Tomcat 9</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="container">
+        <h2 class="section__title" data-i18n="contactTitle">Contacto</h2>
+        <p class="section__subtitle" data-i18n="contactSubtitle">¿Tienes un proyecto en mente? Hablemos.</p>
+        <div class="contact__grid">
+          <div class="contact__info">
+            <a href="mailto:hello@maucabrera.dev" class="contact__item">
+              <span class="contact__icon">✉️</span>
+              <span>hello@maucabrera.dev</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mauriciocabreragonzalez/" class="contact__item" target="_blank" rel="noopener">
+              <span class="contact__icon">🔗</span>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/maucabreradev" class="contact__item" target="_blank" rel="noopener">
+              <span class="contact__icon">🐙</span>
+              <span>GitHub</span>
+            </a>
+            <a href="https://maucabrera.dev" class="contact__item" target="_blank" rel="noopener">
+              <span class="contact__icon">🌐</span>
+              <span>maucabrera.dev</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text" data-i18n="footer">© 2026 Mauricio Cabrera. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
