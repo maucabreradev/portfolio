@@ -646,10 +646,11 @@ a:hover {
   .navbar {
     height: 56px;
     padding: 0 16px;
+    overflow: visible;
   }
 
   .navbar__menu {
-    display: none;
+    display: none !important;
     position: fixed;
     top: 56px;
     left: 0;
@@ -664,10 +665,12 @@ a:hover {
     gap: 8px;
     z-index: 1001;
     overflow-y: auto;
+    height: calc(100vh - 56px);
+    width: 100%;
   }
 
   .navbar__menu.open {
-    display: flex;
+    display: flex !important;
   }
 
   .navbar__link {
