@@ -116,6 +116,7 @@ a:hover {
   justify-content: space-between;
   padding: 0 24px;
   height: 64px;
+  overflow: visible;
 }
 
 .navbar--scrolled {
@@ -133,6 +134,10 @@ a:hover {
   padding: 0;
 }
 
+.navbar__menu.open {
+  display: flex;
+}
+
 .navbar__link {
   color: #ffffff;
   padding: 8px 16px;
@@ -142,6 +147,8 @@ a:hover {
   transition: all var(--transition);
   display: block;
   white-space: nowrap;
+  position: relative;
+  z-index: 1002;
 }
 
 .navbar--scrolled .navbar__link {
@@ -172,6 +179,8 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 8px;
+  position: relative;
+  z-index: 1002;
 }
 
 /* THEME TOGGLE */
@@ -188,6 +197,8 @@ a:hover {
   font-size: 1.1rem;
   color: #ffffff;
   transition: all var(--transition);
+  position: relative;
+  z-index: 1002;
 }
 
 .navbar--scrolled .theme-toggle {
@@ -212,6 +223,8 @@ a:hover {
   font-size: 0.8rem;
   cursor: pointer;
   transition: all var(--transition);
+  position: relative;
+  z-index: 1002;
 }
 
 .navbar--scrolled .lang-toggle {
@@ -234,6 +247,8 @@ a:hover {
   border: none;
   cursor: pointer;
   padding: 4px;
+  position: relative;
+  z-index: 1003;
 }
 
 .navbar__hamburger span {
@@ -647,7 +662,7 @@ a:hover {
     padding: 24px 16px;
     border-bottom: none;
     gap: 8px;
-    z-index: 999;
+    z-index: 1001;
     overflow-y: auto;
   }
 
@@ -662,6 +677,7 @@ a:hover {
     min-height: 48px;
     display: flex;
     align-items: center;
+    z-index: 1002;
   }
 
   .navbar--scrolled .navbar__link {
@@ -670,7 +686,7 @@ a:hover {
 
   .navbar__hamburger {
     display: flex;
-    z-index: 1001;
+    z-index: 1003;
   }
 
   .hero {
