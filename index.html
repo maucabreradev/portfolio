@@ -11,10 +11,14 @@
 </head>
 <body>
   <nav class="navbar" id="navbar">
-    <div class="navbar__brand">
-      <a href="#inicio" class="navbar__logo">MC</a>
-      <span class="navbar__name">Mauricio Cabrera</span>
-    </div>
+    <ul class="navbar__menu" id="navMenu">
+      <li><a href="#inicio" class="navbar__link navbar__link--active" data-section="inicio">🏠 Inicio</a></li>
+      <li><a href="#sobre-mi" class="navbar__link" data-section="sobre-mi">ℹ️ Sobre mí</a></li>
+      <li><a href="#proyectos" class="navbar__link" data-section="proyectos">📁 Proyectos</a></li>
+      <li><a href="#caso-de-estudio" class="navbar__link" data-section="caso-de-estudio">📖 Caso de estudio</a></li>
+      <li><a href="#habilidades" class="navbar__link" data-section="habilidades">⚡ Habilidades</a></li>
+      <li><a href="#contacto" class="navbar__link" data-section="contacto">✉️ Contacto</a></li>
+    </ul>
     <div class="navbar__actions">
       <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
         <span id="langLabel">ES</span>
@@ -26,14 +30,6 @@
         <span></span><span></span><span></span>
       </button>
     </div>
-    <ul class="navbar__menu" id="navMenu">
-      <li><a href="#inicio" class="navbar__link navbar__link--active" data-section="inicio">Inicio</a></li>
-      <li><a href="#sobre-mi" class="navbar__link" data-section="sobre-mi">Sobre mí</a></li>
-      <li><a href="#proyectos" class="navbar__link" data-section="proyectos">Proyectos</a></li>
-      <li><a href="#caso-de-estudio" class="navbar__link" data-section="caso-de-estudio">Caso de estudio</a></li>
-      <li><a href="#habilidades" class="navbar__link" data-section="habilidades">Habilidades</a></li>
-      <li><a href="#contacto" class="navbar__link" data-section="contacto">Contacto</a></li>
-    </ul>
   </nav>
 
   <main>
@@ -46,12 +42,6 @@
         <div class="hero__actions">
           <a href="#proyectos" class="btn btn--primary" data-i18n="viewProjects">Ver Proyectos</a>
           <a href="#contacto" class="btn btn--outline" data-i18n="contactMe">Contactarme</a>
-        </div>
-      </div>
-      <div class="hero__visual">
-        <div class="hero__blob"></div>
-        <div class="hero__avatar">
-          <span class="hero__avatar-letters">MC</span>
         </div>
       </div>
     </section>
